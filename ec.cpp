@@ -132,5 +132,5 @@ int main(int argc, char* argv[])
     (void)cygwin_conv_path(CCP_WIN_A_TO_POSIX, sp, buf, MXWINPATH);
     os << ' ' << buf;
   }
-  return system(os.str().c_str());;
+  return system(os.str().c_str());
 }

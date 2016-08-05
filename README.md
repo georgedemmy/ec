@@ -4,9 +4,11 @@ Why another emacsclient launcher for Cygwin? There may be a perfect
 emacsclient wrapper out there (I haven't found it, and this one most
 certainly isn't), but most of the launchers I've encountered suffered
 from some combination of these three issues:
+
 1. spaces in the path
 2. only one argument at a time
 3. were either wait or no-wait (-n) only
+
 ec works around these issues by naively passing anything at the
 beginning of the argument list starting with a dash on to emacsclient,
 everything that comes after the first non-dash-starting argument on as
